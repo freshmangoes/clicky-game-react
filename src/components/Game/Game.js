@@ -39,8 +39,7 @@ const Game = () => {
 		<div className="container-fluid">
 			<div className="col">
 				<div className="row d-flex">
-          {/* NOTE */}
-          {/* Might have to place this bit in another component? */}
+          {/* NOTE Might have to place this bit in another component? */}
 					{imgs.map((img) => {
 						return (
 							<Picture
