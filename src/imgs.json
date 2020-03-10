@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"name": "cayde",
+		"href": "images/cayde.png"
+	},
+	{
+		"id": 2,
+		"name": "zavala",
+		"href": "images/zavala.png"
+	},
+	{
+		"id": 3,
+		"name": "ikora",
+		"href": "images/ikora.png"
+	},
+	{
+		"id": 4,
+		"name": "orisis",
+		"href": "images/orisis.png"
+	},
+	{
+		"id": 5,
+		"name": "saladin",
+		"href": "images/saladin.png"
+	},
+	{
+		"id": 6,
+		"name": "shaxx",
+		"href": "images/shaxx.png"
+	}
+]
