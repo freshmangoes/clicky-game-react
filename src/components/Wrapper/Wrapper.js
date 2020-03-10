@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Wrapper = (props) => {
-  return (<main className="wrapper" {...props}/>);
-}
+	return <main className="wrapper" {...props} />;
+};
 
-export default Wrapper
+export default Wrapper;
