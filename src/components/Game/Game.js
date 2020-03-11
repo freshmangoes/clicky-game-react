@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Pictures from '../Pictures';
+import PictureContainer from '../PictureContainer'
 
 const Game = () => {
 	// NOTE debug
@@ -9,7 +9,7 @@ const Game = () => {
 		<div className="container-fluid">
 			<div className="col">
 				<div className="row d-flex">
-          <Pictures />
+          <PictureContainer />
 				</div>
 			</div>
 		</div>
