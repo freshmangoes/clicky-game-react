@@ -63,25 +63,28 @@ class Game extends Component {
 		const imgs = this.state.imgs;
 		return (
 			<Wrapper>
-				<Navbar />
-				<div className="container-fluid">
-					<Jumbotron score={this.state.score} />
-					<div className="col">
-						<div className="row"></div>
-						<div className="row d-flex">
-							{imgs.map((img) => {
-								return (
-									<PictureCard
-										src={img.src}
-										name={img.name}
-										key={img.id}
-										handleClick={(e) => this.handleClick(e)}
-									/>
-								);
-							})}
-						</div>
-					</div>
-				</div>
+        <div className="row">
+          <div className="col">
+            <Navbar />
+            <div className="container-fluid">
+              <Jumbotron score={this.state.score} />
+              <div className="col">
+                <div className="row d-flex justify-content-center">
+                  {imgs.map((img) => {
+                    return (
+                      <PictureCard
+                        src={img.src}
+                        name={img.name}
+                        key={img.id}
+                        handleClick={(e) => this.handleClick(e)}
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 			</Wrapper>
 		);
 	}
