@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Jumbotron = () => {
+const Jumbotron = (props) => {
 	return (
 		<div className="row">
 			<div className="col">
@@ -10,6 +10,7 @@ const Jumbotron = () => {
 						Click on an image to earn points, but don't click on any more than
 						once!
 					</h5>
+					<h5>Score: {props.score}</h5>
 				</div>
 			</div>
 		</div>
