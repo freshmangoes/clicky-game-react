@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/clicky-game-react/static/css/main.5f361e03.chunk.css",
-    "main.js": "/clicky-game-react/static/js/main.f4954f58.chunk.js",
-    "main.js.map": "/clicky-game-react/static/js/main.f4954f58.chunk.js.map",
+    "main.js": "/clicky-game-react/static/js/main.2affc89a.chunk.js",
+    "main.js.map": "/clicky-game-react/static/js/main.2affc89a.chunk.js.map",
     "runtime-main.js": "/clicky-game-react/static/js/runtime-main.051407de.js",
     "runtime-main.js.map": "/clicky-game-react/static/js/runtime-main.051407de.js.map",
-    "static/js/2.164166d8.chunk.js": "/clicky-game-react/static/js/2.164166d8.chunk.js",
-    "static/js/2.164166d8.chunk.js.map": "/clicky-game-react/static/js/2.164166d8.chunk.js.map",
+    "static/js/2.da95bd96.chunk.js": "/clicky-game-react/static/js/2.da95bd96.chunk.js",
+    "static/js/2.da95bd96.chunk.js.map": "/clicky-game-react/static/js/2.da95bd96.chunk.js.map",
     "index.html": "/clicky-game-react/index.html",
-    "precache-manifest.fe23707f9a77c941f3e6e85706caeded.js": "/clicky-game-react/precache-manifest.fe23707f9a77c941f3e6e85706caeded.js",
+    "precache-manifest.238d281c8c1c818343e24cddb7a6a3be.js": "/clicky-game-react/precache-manifest.238d281c8c1c818343e24cddb7a6a3be.js",
     "service-worker.js": "/clicky-game-react/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/clicky-game-react/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.164166d8.chunk.js.LICENSE.txt": "/clicky-game-react/static/js/2.164166d8.chunk.js.LICENSE.txt",
+    "static/js/2.da95bd96.chunk.js.LICENSE.txt": "/clicky-game-react/static/js/2.da95bd96.chunk.js.LICENSE.txt",
     "static/media/cayde.png": "/clicky-game-react/static/media/cayde.a3a58dab.png",
     "static/media/ikora.png": "/clicky-game-react/static/media/ikora.20017cda.png",
     "static/media/osiris.png": "/clicky-game-react/static/media/osiris.fab3165c.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.051407de.js",
-    "static/js/2.164166d8.chunk.js",
+    "static/js/2.da95bd96.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.f4954f58.chunk.js"
+    "static/js/main.2affc89a.chunk.js"
   ]
 }
