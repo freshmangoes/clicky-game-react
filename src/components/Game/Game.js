@@ -4,6 +4,7 @@ import PictureCard from '../PictureCard';
 import Navbar from '../Navbar';
 import Jumbotron from '../Jumbotron';
 import Wrapper from '../Wrapper';
+import Swal from 'sweetalert2';
 
 class Game extends Component {
 	state = {
@@ -34,6 +35,14 @@ class Game extends Component {
 		return result;
 	};
 
+	reset = () => {
+		this.setState({
+			imgs: Images,
+			score: 0,
+			clicked: []
+		});
+	};
+
 	handleClick = (event) => {
 		// sets imgs using shuffleArray
 		const name = event.target.name;
@@ -43,11 +52,23 @@ class Game extends Component {
 
 		if (this.state.clicked.includes(name)) {
 			console.log('resetting');
-			newScore = 0;
-			newClickedArray = [];
+			this.reset();
+			return;
 		} else {
 			newClickedArray = this.addClickedImg(name);
 			newScore = this.state.score + 1;
+		}
+
+		if (newScore === this.state.imgs.length) {
+			console.log(`You won!`);
+			Swal.fire({
+				title: 'Congrats!',
+				text: 'You won :)',
+				confirmButtonText: 'nice',
+				icon: 'success'
+			}).then(() => {
+				this.reset();
+			});
 		}
 
 		const newState = {
@@ -63,28 +84,28 @@ class Game extends Component {
 		const imgs = this.state.imgs;
 		return (
 			<Wrapper>
-        <div className="row">
-          <div className="col">
-            <Navbar />
-            <div className="container-fluid">
-              <Jumbotron score={this.state.score} />
-              <div className="col">
-                <div className="row d-flex justify-content-center">
-                  {imgs.map((img) => {
-                    return (
-                      <PictureCard
-                        src={img.src}
-                        name={img.name}
-                        key={img.id}
-                        handleClick={(e) => this.handleClick(e)}
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+				<div className="row">
+					<div className="col">
+						<Navbar />
+						<div className="container-fluid">
+							<Jumbotron score={this.state.score} />
+							<div className="col">
+								<div className="row d-flex justify-content-center">
+									{imgs.map((img) => {
+										return (
+											<PictureCard
+												src={img.src}
+												name={img.name}
+												key={img.id}
+												handleClick={(e) => this.handleClick(e)}
+											/>
+										);
+									})}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</Wrapper>
 		);
 	}
