@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Images from '../Images';
 import PictureCard from '../PictureCard';
-import Scoreboard from '../Scoreboard';
 import Navbar from '../Navbar';
 import Jumbotron from '../Jumbotron';
 import Wrapper from '../Wrapper';
