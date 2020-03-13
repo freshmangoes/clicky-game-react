@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './styles.css';
 const PictureCard = (props) => {
 	let { src, name, handleClick } = props;
 	return (
